@@ -1,7 +1,7 @@
 import axios from "axios";
 import useAuthStore from "../../stores/auth";
 
-const baseURL = process.env.EXPO_PUBLIC_API_URL;
+const baseURL = "http://192.168.0.113:8081"; //process.env.EXPO_PUBLIC_API_URL;
 
 const api = axios.create({ baseURL });
 

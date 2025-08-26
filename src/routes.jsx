@@ -17,7 +17,7 @@ export default function Routes() {
           headerTintColor: colors.black,
           headerTitle: "Agendamento",
           headerTitleStyle: {
-            fontSize: "25",
+            fontSize: 25,
           },
         }}
       />
