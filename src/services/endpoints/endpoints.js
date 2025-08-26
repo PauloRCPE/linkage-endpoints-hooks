@@ -1,0 +1,19 @@
+import api from "../api/api";
+
+//user
+export async function CreateUser(body) {
+  const { data } = api.post(`/user`, body);
+  return data;
+}
+export async function GetUser() {
+  const { data } = api.get(`/user`);
+  return data;
+}
+export async function UpdateUser(id, body) {
+  const { data } = api.put(`/user/:${id}`, body);
+  return data;
+}
+export async function DeleteUser(id) {
+  const { data } = api.delete(`/user/:${id}`);
+  return data;
+}
