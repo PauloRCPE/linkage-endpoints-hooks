@@ -1,11 +1,17 @@
 import { Container, PlaceHolder } from "./Styles";
 import { Header } from "../../components";
+import { useNavigation } from "@react-navigation/native";
+import { Button } from "react-native";
 
-export default function Home({ navigation }) {
+function Home() {
+  const navigation = useNavigation();
+
   return (
     <Container>
       <Header />
-      <PlaceHolder>Seus eventos aparecerão aqui</PlaceHolder>
+      <Button title='Criar Conta' onPress={() => navigation.navigate("Cadastro")} />
     </Container>
   );
 }
+
+export default Home;
